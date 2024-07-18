@@ -2,9 +2,11 @@ import * as React from 'react';
 import { useColorScheme } from '@mui/joy/styles';
 import Sheet from '@mui/joy/Sheet';
 import CssBaseline from '@mui/joy/CssBaseline';
-import Button from '@mui/joy/Button';
 import SimpleTabPannel from './SimpleTabPannel';
 import Box from '@mui/material/Box';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import Brightness4OutlinedIcon from '@mui/icons-material/Brightness4Outlined';
+import { IconButton } from '@mui/joy';
 
 function ModeToggle() {
   const { mode, setMode } = useColorScheme();
@@ -16,18 +18,19 @@ function ModeToggle() {
     setMounted(true);
   }, []);
   if (!mounted) {
-    return <Button variant="soft">Change mode</Button>;
+    return <IconButton variant="soft"><Brightness4OutlinedIcon/></IconButton>
+    // return <Button variant="soft">Change mode</Button>;
   }
 
   return (
-    <Button
+    <IconButton
       variant="soft"
       onClick={() => {
         setMode(mode === 'light' ? 'dark' : 'light');
       }}
     >
-      {mode === 'light' ? 'Turn dark' : 'Turn light'}
-    </Button>
+      {mode === 'light' ? <DarkModeIcon /> : <Brightness4OutlinedIcon />}
+    </IconButton>
   );
 }
 
