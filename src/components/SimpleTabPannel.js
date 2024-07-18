@@ -1,9 +1,9 @@
 import Tabs from '@mui/joy/Tabs';
 import TabList from '@mui/joy/TabList';
-import { ListItemDecorator } from '@mui/joy';
-
 import { TabPanel } from '@mui/base';
 import Tab from '@mui/joy/Tab';
+
+import { ListItemDecorator } from '@mui/joy';
 import { MonitSideTab } from '../views/data/MonitorSideTab';
 
 const SimpleTabPannel = () => {
