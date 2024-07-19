@@ -1,9 +1,11 @@
 ### MUI Tutorial
 
 ### components
-* SimpleTabPannel: 사이드 패널 같은 역할
+* SimpleTabPannel: 사이드 패널
 
-* HideAppBar: 스크롤 하면 없어지는 메뉴 바와 같은 역할
+* HideAppBar: 스크롤 하면 없어지는 메뉴 바
+
+* LeftDrawer: 옆에서 튀어나오는 메뉴 창
 
 ### how to run
 
