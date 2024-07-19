@@ -12,7 +12,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 
-export default function LeftDrawer() {
+export default function LeftDrawer(props) {
   const [open, setOpen] = React.useState(false);
 
   const toggleDrawer = (newOpen) => () => {
@@ -52,6 +52,7 @@ export default function LeftDrawer() {
   return (
     <React.Fragment>
     <IconButton
+      {...props}
       onClick={toggleDrawer(true)}
     >
       <MenuIcon />

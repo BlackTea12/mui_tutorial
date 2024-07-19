@@ -5,11 +5,10 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import IconButton from '@mui/material/IconButton';
-// import MenuIcon from '@mui/icons-material/Menu';
 import DeveloperBoardIcon from '@mui/icons-material/DeveloperBoard';
-import LeftDrawer from './LeftDrawer';
-
 import Slide from '@mui/material/Slide';
+
+import LeftDrawer from './LeftDrawer';
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -47,7 +46,7 @@ export default function HideAppBar(props) {
               edge="start"
               color="inherit"
               aria-label="menu"
-              sx={{ mr: 2 }}/>
+              sx={{ mr: 2}}/>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               Monitor Board
             </Typography>
