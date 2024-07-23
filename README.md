@@ -1,5 +1,9 @@
 ## MUI Tutorial
 
+### style information
+It is very important to know how to apply design style in mui.
+Follow the [system properties](https://mui.com/system/properties/)!
+
 ### 💘components
 * `SimpleTabPannel`, 사이드 패널
 
