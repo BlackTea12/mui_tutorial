@@ -1,17 +1,18 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Sheet from '@mui/joy/Sheet';
+import SimpleTabPannel from '../components/SimpleTabPannel';
 
 export default function Home () {
   return (
     <React.Fragment>
-      <Box sx={{ p: 1, m: 5, flexDirection: 'row'}}>
-        <Sheet variant="outlined" color="neutral" sx={{ borderRadius: '16px', display: 'flex'}}>
+      <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', flexGrow: 1, gap: 2}}>
+        <Sheet variant="outlined" color="neutral" sx={{ borderRadius: '16px', gridColumn: '1/4'}}>
           sheet 1
         </Sheet>
-        <Sheet variant="outlined" color="neutral" sx={{ borderRadius: '8px', display: 'flex' }}>
-          sheet 2
-        </Sheet>
+        <Box sx={{ gridColumn: '4/5'}}>
+          <SimpleTabPannel/>
+        </Box>
       </Box>
     </React.Fragment>
   );
